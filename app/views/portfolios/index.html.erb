@@ -5,4 +5,5 @@
   <p><%= portfolio.body %></p>
   <%= image_tag portfolio.thumb_image if portfolio.thumb_image.present? %>
   <%= link_to "Edit", edit_portfolio_path(portfolio.id) %>
+  <%= link_to "Show", portfolio_path(portfolio.id) %>
 <% end %>
